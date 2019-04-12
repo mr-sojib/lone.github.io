@@ -1,0 +1,716 @@
+/*
+  Project Name : Page Builder
+  Author Company : Ewebcraft
+  Project Date: 11 january, 2017
+  Author Website : http://www.ewebcraft.com
+  Author Email : ewebcraft@gmail.com
+*/
+
+  /* -- general styles -- */
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,500,700');
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', sans-serif;    
+  }
+  a,button,.btn {
+    outline: none;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+  a:hover,a:active,a:focus,
+  button:hover,button:active,button:focus,
+  .btn:hover,.btn:active,.btn:focus {
+    outline: none;
+    text-decoration: none;
+  }
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  .nopadding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .padding-left-z {
+    padding-left: 0px;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .wow {
+    visibility: hidden;
+  }
+  img {
+    max-width: 100%;
+  }
+  input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+  }
+  input[type=number]::-moz-inner-spin-button, input[type=number]::-moz-outer-spin-button {
+   -webkit-appearance: none;
+  }
+  
+  input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;    
+  }
+  input[type=date]::-moz-inner-spin-button, input[type=date]::-moz-outer-spin-button {
+   -webkit-appearance: none; 
+  }
+
+  /* -- general styles -- */
+
+/* form-submision */
+
+  .formOverlay:before 
+  {
+    content: "\f110";
+    font-family: fontawesome;
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8);
+    color:rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10%;
+    font-size: 56px;
+    margin-top: -34px;
+  }
+  .formOverlay 
+  {
+    background: rgba(0,0,0,0.3);
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .alert strong {
+    display: inline-block;
+    width: 100%;
+  }
+  .alert .message-icon 
+  {
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border:1px solid #9F9F9F;
+    border-radius: 50%;
+    line-height: 30px;
+  }
+  .alert span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    float: left;
+    width: 80%;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+  .form-control.error {
+    border-color: rgb(255, 26, 26) !important;
+      box-shadow: 0 1px 1px rgba(56, 165, 74, 0.1) inset, 0 0 4px rgba(166, 0, 0, 0.4) !important;
+      -webkit-box-shadow: 0 1px 1px rgba(255, 52, 52, 0.53) inset, 0 0 4px rgb(255, 36, 36) !important;
+      -moz-box-shadow: 0 1px 1px rgba(56, 165, 74, 0.1) inset, 0 0 4px rgba(166, 0, 0, 0.4) !important;
+  }
+  label.error {
+    display: none !important;
+  }
+
+  .success, .error {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .success {
+    color: green;
+  }
+  .error {
+    color: red;
+  }
+
+  div.module.parallax {
+  height: auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+  /* -------- Student Loan -------- */
+
+/* ******* --lawyers Header-- ****** */
+
+#student_loan-header {
+  background-color: #FFFFFF;
+  padding: 20px 0px;
+  position: relative;
+  box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2), 0 3px 11px 0 rgba(0,0,0,0.19);
+  z-index: 1000;
+  
+}
+#student_loan-header .contact-us {
+  padding-top: 6px;
+}
+#student_loan-header .contact-us a {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  font-weight: 400;
+  font-size: 14px;
+  color: #1f1f1f;
+  display: inline-block;
+  padding-top: 5px;
+}
+#student_loan-header .contact-us a .for-lawers-mail {
+  color: #1f1f1f;
+  transition: all 0.3s ease 0s;
+}
+#student_loan-header .contact-us span {
+  margin-right: 15px;
+}
+#student_loan-header .contact-us a i.fa,
+#student_loan-header .contact-us span i.fa {
+  border-radius: 50px;
+  color: #00adbb;
+  border:1px solid #b3b3b3;
+  width: 39px;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  margin-right: 15px;
+  font-size: 20px;
+}
+#student_loan-header .contact-us a:hover .for-lawers-mail {
+  color: #00adbb;
+}
+
+/* ******* --Banner-- ****** */
+
+#student_loan-banner {
+  background: url(../images/slider_1.jpg) center no-repeat;
+  background-size: cover;
+  padding: 148px 0px;
+}
+#student_loan-banner .banner-text h3 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #212c64;
+  font-size: 30px;
+  margin: 0px;
+  text-transform: capitalize;
+}
+#student_loan-banner .banner-text h1 {
+  font-family: 'Roboto';
+  font-size: 60px;
+  color:#00adbb;
+  margin: 15px 0px 50px;
+  font-weight: 700;
+}
+#student_loan-banner .banner-text h4 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #00adbb;
+  font-size: 24px;
+  margin: 0px;
+  text-transform: capitalize;
+}
+#student_loan-banner .banner-text .std_loan-callNow {
+  background: url(../images/student_loan/phone-bg.png) center no-repeat;
+  padding: 25px 38px 10px 38px;
+  display: inline-block;
+  color: #111328;
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: 500;
+  /*margin-top: 10px;*/
+  margin-bottom: 30px;
+}
+#student_loan-banner .banner-text p {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0px;
+  color: #212c64;
+}
+
+#student_loan-banner .inner-addon {
+  position: relative;
+}
+#student_loan-banner .inner-addon .fa {
+  position: absolute;
+  padding: 15px 15px;
+  width: 43px;
+  pointer-events: none;
+  color: #fff;
+  background-color: #00adbb;
+}
+#student_loan-banner .left-addon .fa {
+  left: 0px;
+}
+#student_loan-banner .left-addon input {
+  padding-left: 53px;
+}
+#student_loan-banner .left-addon select {
+  padding-left: 40px;
+}
+#student_loan-form h2 {
+  font-weight: 500;
+  color: #2f2f2f;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#student_loan-form h1 {
+  font-weight: 500;
+  color: #0099f1;
+  font-size: 38px;
+  text-transform: capitalize;
+}
+#student_loan-form p {
+  text-align: center;
+  font-size: 15px;
+  color: #2f2f2f;
+  margin: 10px 0px;
+}
+#student_loan-form span {
+  color: #00adbb;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#student_loan-form .radio label,
+#student_loan-form .checkbox label,
+#student_loan-form .radio-inline label,
+#student_loan-form .checkbox-inline label {
+  font-weight: 400;
+}
+#student_loan-form .checkbox-inline,
+#student_loan-form .radio-inline {
+  margin-bottom: 15px;
+  float: left;  
+}
+#student_loan-form .checkbox,
+#student_loan-form .radio {
+  text-align: left;
+  margin-bottom: 15px;
+  width: 100%;
+  clear: both;
+}
+#student_loan-form .form-control:focus {
+  border: 2px solid #00adbb;
+}
+#student_loan-form .form-group {
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+#student_loan-form .form-control {
+  height: 43px;
+  font-size: 15px;
+  border-radius: 0px;
+  border: 1px solid #cccccc;
+}
+#student_loan-form .btn-submit {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 64px;
+  background-color: #00adbb;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 0px;
+  border: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-style: normal;
+  transition: all 0.3s ease 0s;
+}
+#student_loan-form .btn-submit:hover {
+  background-color: #fff;
+  color: #00adbb;
+  border: 1px solid #00adbb;
+  transition: all 0.3s ease 0s;
+}
+
+/* ******* --Work-- ****** */
+
+#student_loan-work {
+  padding: 80px 0;
+}
+#student_loan-work hr {
+  border: 1px solid #212c64;
+  margin: 25px auto;
+  width: 95px;
+}
+#student_loan-work p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #383838;
+}
+#student_loan-work .work_main {
+  padding-bottom: 53px;
+}
+#student_loan-work .work_main h3 {
+  font-weight: 500;
+  margin-top: 0px;
+  color: #00adbb;
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+}
+#student_loan-work .work_icon {
+  border-radius: 50%;
+  height: 121px;
+  margin: 0 auto;
+  width: 121px;
+  border: 2px solid #00adbb;
+}
+#student_loan-work .work_icon i {
+  color: #00adbb;
+  font-size: 30px;
+  line-height: 121px;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+}
+#student_loan-work .work_block h4 {
+  color: #00adbb;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 23px;
+  margin-top: 45px;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+}
+#student_loan-work .work_block:hover .work_icon, #student_loan-work .work_block:hover .work_icon i {
+  background-color: #00adbb;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+/* ******* --Learn-- ****** */
+
+#student_loan-learn {
+  background: url(../images/slider_2.jpg) center no-repeat;
+  background-size: cover;
+  padding: 75px 0px 0px;
+}
+#student_loan-learn hr {
+  border: 1px solid #ffffff;
+  margin: 25px 0px 40px;
+  width: 95px;
+}
+#student_loan-learn h3 {
+  font-weight: 500;
+  margin-top: 0px;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+}
+#student_loan-learn .learn_main hr {
+  border-color: white;
+}
+#student_loan-learn p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+#student_loan-learn .learn-text h2 {
+  margin-top: 0px;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+#student_loan-learn .learn-text h2, #student_loan-learn .learn-text p {
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+#student_loan-learn ul {
+  padding: 0px;
+  margin: 0px;
+}
+#student_loan-learn ul>li {
+  padding: 0px;
+  margin: 30px 0px;
+  line-height: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #fff;
+  font-size: 14px;
+  list-style: none;
+}
+#student_loan-learn .number {
+  display: block;
+  text-align: center;
+  position: relative;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  height: 49px;
+  margin: 0;
+  width: 49px;
+  float: left;
+}
+#student_loan-learn ul>li>.number h2 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 49px;
+  margin: 0;
+  text-align: center;
+}
+#student_loan-learn ul>li> p {
+  color: #fff;
+  padding-left: 70px;
+  text-align: left;
+}
+#student_loan-learn .for-about-btn {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 30px;  
+}
+#student_loan-learn .for-about-btn span {
+  margin-right: 20px;
+}
+#student_loan-learn .btn-about {
+  background: transparent;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 40px;
+  padding: 6px 20px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+#student_loan-learn .btn-about:hover {
+  background: rgba(0, 173, 187, 0.8);
+  border-color: rgba(0, 173, 187, 1);
+}
+
+/* ******* --Testemonial-- ****** */
+
+#student_loan-testimonial {
+  padding: 80px 0px;
+  text-align: center;
+}
+#student_loan-testimonial hr {
+  border: 1px solid #212c64;
+  margin: 25px auto;
+  width: 95px;
+}
+#student_loan-testimonial .testimonal_main {
+  padding-bottom: 50px;
+}
+#student_loan-testimonial .testimonal_main h3 {
+  font-weight: 500;
+  margin-top: 0px;
+  color: #00adbb;
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+}
+#student_loan-testimonial .testi_img img {
+  margin-bottom: 40px;
+  display: block;
+  width: auto;
+  margin: 35px auto 0px;
+}
+#student_loan-testimonial .item span {
+  display: block;
+}
+#student_loan-testimonial .item h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #00adbb;
+  margin-top: 50px;
+  display: inline-flex;
+  font-family: 'Roboto', sans-serif;
+}
+#student_loan-testimonial .item h4 span {
+  font-size: 14px;
+  color: #909090;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+#student_loan-testimonial .item span .comma-left {
+  width: auto;
+}
+#student_loan-testimonial .item span .comma-right {
+  float: right;
+  width: auto;
+}
+
+/* ******* --CTA-- ****** */
+
+#student_loan-cta {
+  background: url(../images/student_loan/cta-bg.jpg) center no-repeat;
+  background-size: cover;
+  padding: 50px 0px;
+}
+#student_loan-cta h4 {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+#student_loan-cta .btn-about {
+  background: transparent;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 40px;
+  padding: 6px 20px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+#student_loan-cta .btn-about:hover {
+  background: rgba(0, 173, 187, 0.8);
+  border-color: rgba(0, 173, 187, 1);
+}
+
+/* ******* --Copyright-- ****** */
+
+#student_loan-copyright {
+  background-color: #00adbb;
+	padding: 8px 0;
+    box-shadow: 0px 0px 10px #000;
+}
+#student_loan-copyright a {
+  color: #fff;
+}
+#student_loan-copyright .footer-detail h3 {
+  color: #FFFFFF;
+  font-size: 14px;
+  text-transform: inherit;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+#student_loan-copyright .footer-detail a {
+  transition: all 0.3s ease 0s;
+}
+#student_loan-copyright .footer-detail a i.fa {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  background: transparent;
+  border:1px solid #fff;
+  border-radius: 50%;
+  margin-left: 15px;
+  font-size: 16px;
+  transition:all 0.5s ease 0s;
+}
+#student_loan-copyright .footer-detail a:hover i.fa {
+  background: #fff;
+  color: #00adbb;
+}
+#student_loan-copyright p {
+  margin: 0px;
+  margin-top: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: right;
+}
+
+/*___----- Responsive -----___*/
+
+@media (max-width: 980px) {
+  #student_loan-header .contact-us span {
+    margin-right: 8px;
+  }
+  #student_loan-header .contact-us a i.fa, #student_loan-header .contact-us span i.fa {
+    margin-right: 5px;
+  }
+  #student_loan-banner {
+    position: relative;
+  }
+  #student_loan-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+  }
+  #student_loan-learn .learn-img {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  #student_loan-banner {
+    background-position: left bottom;
+  }
+  #student_loan-banner .form-content {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #student_loan-banner .img-3 {
+    margin-top: 40px;
+  }
+  #student_loan-banner .img-2 {
+    margin-top: 20px;
+  }
+  #student_loan-work {
+    padding-bottom: 60px;
+  }
+  #student_loan-work .work_block {
+    margin-bottom: 20px;
+  }
+  #student_loan-copyright {
+    text-align: center;
+  }
+  #student_loan-copyright .footer-detail {
+    margin-bottom: 15px;
+  }
+  #student_loan-copyright p {
+    text-align: center;
+  }
+}
+@media (max-width: 640px) {
+  #student_loan-header .contact-us {
+    text-align: left;
+    margin-top: 10px;
+  }
+  #student_loan-testimonial .item span .comma-left {
+    margin-bottom: 15px;
+  }
+  #student_loan-testimonial .item h4 {
+    margin-top: 10px;
+  }
+  #student_loan-banner .pull-right {
+    float: none !important; 
+  }
+}
+@media (max-width: 480px) {
+  #student_loan-banner .form-content {
+    width: 90%;
+  }
+}
+@media (max-width: 360px) {
+  #student_loan-banner .banner-text .std_loan-callNow {
+    font-size: 30px;
+    padding: 20px 38px 10px;
+  }
+}
+@media (max-width: 320px) {
+  #student_loan-banner .img-2 {
+    display: none;
+  }
+  #student_loan-banner .img-3 {
+    margin-top: 15px;
+  }
+}
